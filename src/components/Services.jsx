@@ -1,14 +1,13 @@
-
 const Services = () => {
 
 
     return (
-        <div className="lg:px-10 px-4">
+        <div className="lg:mx-10 mx-4 bg-gradient-stops">
             <div className=" mx-auto mb-16 text-center">
                 <span className="text-4xl font-bold ">Our Services</span>
                 <h2 className=" ">Comprehensive Solutions to Meet All Your Cryptocurrency Needs</h2>
             </div>
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 ">
                 <div className="flex flex-col ">
                     <div className="flex gap-3 lg:h-20">
                         <div className=" border-4 border-[#15BFBD] "></div>
@@ -103,3 +102,6 @@ const Services = () => {
 };
 
 export default Services;
+
+
+

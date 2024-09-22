@@ -1,7 +1,7 @@
 
 const Features = () => {
     return (
-        <section className="lg:px-10 px-2">
+        <section className="lg:px-10 px-2 bg-gradient-stops">
             <div className="container px-6 py-12 mx-auto">
                 <div className=" mx-auto mb-16 text-center">
                     <span className="text-4xl font-bold ">Key Features</span>

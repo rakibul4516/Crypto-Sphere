@@ -43,7 +43,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="">
+        <div className="bg-gradient-low">
             {/* Navbar Section Start  */}
             <div className=' flex justify-between items-center h-20 max-w-full mx-auto lg:px-10 px-4 text-white '>
 
@@ -136,7 +136,7 @@ const Navbar = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="relative flex justify-center items-center ">
+                    <div className="relative flex justify-center items-center bg-gradient-stops">
                         <div className="border-t-[2px] border-b-[1px] border-r-[3px] border-l-[1px] rounded-md border-blue-500 p-2  flex flex-col gap-3">
                             <div className="flex justify-between px-6 ">
                                 <button className='text-[16px] font-bold bg-gradient-to-r from-[#2572DB] to-[#15BFBD] rounded-full px-10 py-2'>Buy</button>

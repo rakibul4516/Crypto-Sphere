@@ -3,7 +3,7 @@ const About = () => {
     return (
         <section className=" body-font ">
             <div className="container lg:px-10 px-4 py-10 mx-auto flex flex-wrap">
-                <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+                <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden bg-gradient-low">
                     <img alt="feature" className="object-cover object-center h-full w-full" src="https://i.ibb.co.com/YTjJ7rD/image.png" />
                 </div>
                 <div className="flex flex-col flex-wrap lg:py-6 lg:w-1/2 lg:pl-5 lg:text-left text-center">

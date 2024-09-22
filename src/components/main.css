@@ -22,3 +22,22 @@
     text-align: center;
     line-height: 1.5;
   }
+
+
+  .bg-gradient-stops {
+    background-image: radial-gradient(
+      circle, 
+      #0f6672 0%,  /* Center color */
+      #090E26 40%,  /* Dark at 70% */
+      #090E26 100%  /* Dark at edges */
+    );
+  }
+  .bg-gradient-low {
+    background-image: radial-gradient(
+      circle, 
+      #181066 0%,  /* Center color */
+      #090E26 35%,  /* Dark at 70% */
+      #090E26 80%  /* Dark at edges */
+    );
+  }
+

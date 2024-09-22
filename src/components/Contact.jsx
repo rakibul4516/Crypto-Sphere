@@ -1,7 +1,6 @@
-import "./border.css"
 const Contact = () => {
     return (
-        <section className="lg:w-2/3 mx-auto px-4 py-10 ">
+        <section className="lg:w-2/3 mx-auto px-4 py-10 bg-gradient-stops">
             <div className="mx-auto">
                 <div className="mb-4">
                     <div className=" mx-auto mb-16 text-center">
