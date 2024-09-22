@@ -1,88 +1,81 @@
 
 const Footer = () => {
     return (
-        <footer className="bg-white dark:bg-gray-900">
-            <div className="container p-6 mx-auto">
-                <div className="lg:flex">
-                    <div className="w-full -mx-6 lg:w-2/5">
-                        <div className="px-6">
-                            <a href="#">
-                                <img className="w-auto h-7" src="https://merakiui.com/images/full-logo.svg" alt=""/>
-                            </a>
+        <footer className="px-10">
+            <div className=" mx-auto">
+                <div className="lg:flex flex-col gap-5 items-start justify-between">
+                    {/* Logo  */}
+                    <div className='flex flex-row justify-center items-center gap-2'>
+                        <div className="">
+                            <svg className='h-12 w-12 lg:w-12 lg:h-12' viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25 0C11.2167 0 0 11.2167 0 25C0 38.7833 11.2167 50 25 50C38.7833 50 50 38.7833 50 25C50 11.2167 38.7833 0 25 0ZM25 46.6667C13.05 46.6667 3.33333 36.95 3.33333 25C3.33333 13.05 13.05 3.33333 25 3.33333C36.95 3.33333 46.6667 13.05 46.6667 25C46.6667 36.95 36.95 46.6667 25 46.6667Z" fill="url(#paint0_linear_2_16)" />
+                                <path d="M41.6667 22.5C40.75 22.5 40 23.25 40 24.1667V25.8333C40 26.75 40.75 27.5 41.6667 27.5C42.5834 27.5 43.3334 26.75 43.3334 25.8333V24.1667C43.3334 23.25 42.5834 22.5 41.6667 22.5ZM8.33335 22.5C7.41669 22.5 6.66669 23.25 6.66669 24.1667V25.8333C6.66669 26.75 7.41669 27.5 8.33335 27.5C9.25002 27.5 10 26.75 10 25.8333V24.1667C10 23.25 9.25002 22.5 8.33335 22.5Z" fill="url(#paint1_linear_2_16)" />
+                                <path d="M25 27.6667L35.6333 22.8833L26.4 8.26666C25.7833 7.29999 24.2 7.29999 23.5833 8.26666L14.35 22.8833L24.9833 27.6667H25Z" fill="url(#paint2_linear_2_16)" />
+                                <path d="M25.6833 31.0166C25.4667 31.1166 25.2333 31.1666 25 31.1666C24.7667 31.1666 24.5333 31.1166 24.3167 31.0166L13.8667 26.3167L23.6 41.7333C23.9 42.2167 24.4333 42.5166 25.0167 42.5166C25.6 42.5166 26.1167 42.2167 26.4333 41.7333L36.1667 26.3167L25.7167 31.0166H25.6833Z" fill="url(#paint3_linear_2_16)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_2_16" x1="0" y1="25" x2="50" y2="25" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#2572DB" />
+                                        <stop offset="1" stopColor="#15BFBD" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_2_16" x1="6.66669" y1="25" x2="43.3334" y2="25" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#2572DB" />
+                                        <stop offset="1" stopColor="#15BFBD" />
+                                    </linearGradient>
+                                    <linearGradient id="paint2_linear_2_16" x1="14.35" y1="17.6042" x2="35.6333" y2="17.6042" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#2572DB" />
+                                        <stop offset="1" stopColor="#15BFBD" />
+                                    </linearGradient>
+                                    <linearGradient id="paint3_linear_2_16" x1="13.8667" y1="34.4166" x2="36.1667" y2="34.4166" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#2572DB" />
+                                        <stop offset="1" stopColor="#15BFBD" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
 
-                            <p className="max-w-sm mt-2 text-gray-500 dark:text-gray-400">Join 31,000+ other and never miss out on new tips, tutorials, and more.</p>
-
-                            <div className="flex mt-6 -mx-2">
-                                <a href="#"
-                                    className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-                                    aria-label="Reddit">
-                                    <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z">
-                                        </path>
-                                    </svg>
-                                </a>
-
-                                <a href="#"
-                                    className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-                                    aria-label="Facebook">
-                                    <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
-                                        </path>
-                                    </svg>
-                                </a>
-
-                                <a href="#"
-                                    className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-                                    aria-label="Github">
-                                    <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
-                                        </path>
-                                    </svg>
-                                </a>
-                            </div>
                         </div>
+                        <h2 className='lg:text-2xl text-2xl font-bold bg-gradient-to-r from-[#2572DB] to-[#15BFBD] bg-clip-text text-transparent'> Crypto Sphere</h2>
                     </div>
-
-                    <div className="mt-6 lg:mt-0 lg:flex-1">
-                        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                            <div>
-                                <h3 className="text-gray-700 uppercase dark:text-white">About</h3>
-                                <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Company</a>
-                                <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">community</a>
-                                <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Careers</a>
+                    <div className="">
+                        <div className="grid grid-cols-1 lg:gap-6 gap-3 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4">
+                            <div className="p-4 flex flex-wrap flex-col items-center gap-2 lg:h-56">
+                                <h3 className="text-white font-semibold">Quick Link</h3>
+                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">Home</a>
+                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">Features</a>
+                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">About Us</a>
+                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">Services</a>
+                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">Testimonials</a>
+                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">Pricing</a>
+                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">FAQ</a>
+                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">Contact</a>
                             </div>
 
-                            <div>
-                                <h3 className="text-gray-700 uppercase dark:text-white">Blog</h3>
-                                <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Tec</a>
-                                <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Music</a>
-                                <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Videos</a>
+                            <div className="p-4 flex flex-col  items-center gap-2">
+                                <h3 className="text-white font-semibold">Legal</h3>
+                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">Privacy Policy</a>
+                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">Terms of Service</a>
                             </div>
 
-                            <div>
-                                <h3 className="text-gray-700 uppercase dark:text-white">Products</h3>
-                                <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Mega cloud</a>
-                                <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Aperion UI</a>
-                                <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Meraki UI</a>
+                            <div className="p-4 flex flex-col  items-center gap-2">
+                                <h3 className="text-white font-semibold">Contact Detail</h3>
+                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">+1 (123) 456-7890</a>
+                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">support@cryptosphere.com</a>
+                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">123 Finance Avenue, Suite 456, TX 78901, USA</a>
                             </div>
 
-                            <div>
-                                <h3 className="text-gray-700 uppercase dark:text-white">Contact</h3>
-                                <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">+1 526 654 8965</span>
-                                <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">example@email.com</span>
+                            <div className="p-4 flex flex-col items-center gap-2">
+                                <h3 className="text-white font-semibold">Legal</h3>
+                                <span className="block mt-2 text-xs text-gray-100 hover:underline">Twitter</span>
+                                <span className="block mt-2 text-xs text-gray-100 hover:underline">Facebook</span>
+                                <span className="block mt-2 text-xs text-gray-100 hover:underline">LinkedIn</span>
+                                <span className="block mt-2 text-xs text-gray-100 hover:underline">Instagram</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <hr className="h-px my-6 bg-gray-200 border-none dark:bg-gray-700"/>
-
-                    <div>
-                        <p className="text-center text-gray-500 dark:text-gray-400">© Brand 2020 - All rights reserved</p>
-                    </div>
+                <div>
+                    <p className="text-center text-gray-100 dark:text-gray-400 pt-16 pb-6">© 2024 Crypto Sphere Inc. All Rights Reserved.</p>
+                </div>
             </div>
         </footer>
     );

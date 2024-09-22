@@ -61,20 +61,20 @@ const Navbar = () => {
                             <path d="M25.6833 31.0166C25.4667 31.1166 25.2333 31.1666 25 31.1666C24.7667 31.1666 24.5333 31.1166 24.3167 31.0166L13.8667 26.3167L23.6 41.7333C23.9 42.2167 24.4333 42.5166 25.0167 42.5166C25.6 42.5166 26.1167 42.2167 26.4333 41.7333L36.1667 26.3167L25.7167 31.0166H25.6833Z" fill="url(#paint3_linear_2_16)" />
                             <defs>
                                 <linearGradient id="paint0_linear_2_16" x1="0" y1="25" x2="50" y2="25" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#2572DB" />
-                                    <stop offset="1" stop-color="#15BFBD" />
+                                    <stop stopColor="#2572DB" />
+                                    <stop offset="1" stopColor="#15BFBD" />
                                 </linearGradient>
                                 <linearGradient id="paint1_linear_2_16" x1="6.66669" y1="25" x2="43.3334" y2="25" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#2572DB" />
-                                    <stop offset="1" stop-color="#15BFBD" />
+                                    <stop stopColor="#2572DB" />
+                                    <stop offset="1" stopColor="#15BFBD" />
                                 </linearGradient>
                                 <linearGradient id="paint2_linear_2_16" x1="14.35" y1="17.6042" x2="35.6333" y2="17.6042" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#2572DB" />
-                                    <stop offset="1" stop-color="#15BFBD" />
+                                    <stop stopColor="#2572DB" />
+                                    <stop offset="1" stopColor="#15BFBD" />
                                 </linearGradient>
                                 <linearGradient id="paint3_linear_2_16" x1="13.8667" y1="34.4166" x2="36.1667" y2="34.4166" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#2572DB" />
-                                    <stop offset="1" stop-color="#15BFBD" />
+                                    <stop stopColor="#2572DB" />
+                                    <stop offset="1" stopColor="#15BFBD" />
                                 </linearGradient>
                             </defs>
                         </svg>
@@ -137,7 +137,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="relative flex justify-center items-center ">
-                        <div className="border-t-[2px] border-b-[1px] border-r-[3px] border-l-[1px] rounded-md border-blue-500 p-5 flex flex-col gap-3">
+                        <div className="border-t-[2px] border-b-[1px] border-r-[3px] border-l-[1px] rounded-md border-blue-500 p-2  flex flex-col gap-3">
                             <div className="flex justify-between px-6 ">
                                 <button className='text-[16px] font-bold bg-gradient-to-r from-[#2572DB] to-[#15BFBD] rounded-full px-10 py-2'>Buy</button>
                                 <button className='rounded-full px-10 py-2 text-[16px] font-bold'>Sell</button>

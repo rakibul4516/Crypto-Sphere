@@ -1,0 +1,24 @@
+/* Custom class for the gradient border */
+.input-gradient {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-image: linear-gradient(#090E26, #090E26), linear-gradient(to right, #2572DB, #15BFBD);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  /* When the input is focused, apply the gradient border */
+  .input-gradient:focus {
+    border-color: transparent;
+    outline: none;
+  }
+  
+  /* Center the placeholder text */
+  .placeholder-center::placeholder {
+    text-align: center;
+    line-height: 1.5;
+  }
