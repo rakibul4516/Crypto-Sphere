@@ -24,7 +24,7 @@ Live Link: [https://cryptospherex.netlify.app/]
 
 This website is built using the following technologies:
 
-- **Frontend**: [HTML5, CSS3, JavaScript, React, etc.]
+- **Frontend**: [HTML5, CSS3,Tailwind CSS, JavaScript, React, etc.]
 - **Packages**: [React Router DOM]
 - **Deploy**: [Netlify]
 
