@@ -1,5 +1,16 @@
 
 const Footer = () => {
+    const navItems = [
+        { id: 1, text: 'Home' },
+        { id: 2, text: 'Features' },
+        { id: 3, text: 'About' },
+        { id: 4, text: 'Services' },
+        { id: 5, text: 'Testimonials' },
+        { id: 6, text: 'Pricing' },
+        { id: 7, text: 'FAQ' },
+        { id: 8, text: 'Contact' },
+
+    ];
     return (
         <footer className="lg:px-10 px-4 bg-gradient-low">
             <div className=" mx-auto">
@@ -39,14 +50,10 @@ const Footer = () => {
                         <div className="grid grid-cols-1 lg:gap-6 gap-3 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4">
                             <div className="p-4 flex flex-wrap flex-col items-center gap-2 lg:h-56">
                                 <h3 className="text-white font-semibold">Quick Link</h3>
-                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">Home</a>
-                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">Features</a>
-                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">About Us</a>
-                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">Services</a>
-                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">Testimonials</a>
-                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">Pricing</a>
-                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">FAQ</a>
-                                <a href="#" className="block mt-2 text-xs text-gray-100 hover:underline">Contact</a>
+                                {
+                                    navItems?.map((item)=> <a href="#" key={item?.id} className="block mt-2 text-xs text-gray-100 hover:underline">{item?.text}</a>
+                                )
+                                }
                             </div>
 
                             <div className="p-4 flex flex-col  items-center gap-2">

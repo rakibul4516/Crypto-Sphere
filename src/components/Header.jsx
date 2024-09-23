@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { FaBtc, FaEthereum, FaDollarSign } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const options = [
     { value: 'btc', label: 'BTC', icon: <FaBtc /> },
@@ -18,32 +19,47 @@ const Navbar = () => {
 
     // Array containing navigation items
     const navItems = [
-        { id: 1, text: 'Home' },
-        { id: 2, text: 'Features' },
-        { id: 3, text: 'About' },
-        { id: 4, text: 'Services' },
-        { id: 5, text: 'Testimonials' },
-        { id: 6, text: 'Pricing' },
-        { id: 6, text: 'FAQ' },
-        { id: 6, text: 'Contact' },
+        { id: 1, text: 'Home', url: '/' },
+        { id: 2, text: 'Features', url: '/#features' },
+        { id: 3, text: 'About', url: '/#about' },
+        { id: 4, text: 'Services', url: '/#services' },
+        { id: 5, text: 'Pricing', url: '/#pricing' },
+        { id: 6, text: 'FAQ', url: '/#faq' },
+        { id: 7, text: 'Contact', url: '/#contact' },
 
     ];
 
 
-    const [inputValue, setInputValue] = useState('');
-    const [selectedOption, setSelectedOption] = useState(options[0].value);
+    const [inputValueOne, setInputValueOne] = useState('');
+    const [inputValueTwo, setInputValueTwo] = useState('');
+    const [inputValueThree, setInputValueThree] = useState('');
+    const [selectedOptionOne, setSelectedOptionOne] = useState(options[0].value);
+    const [selectedOptionTwo, setSelectedOptionTwo] = useState(options[0].value);
+    const [selectedOptionThree, setSelectedOptionThree] = useState(options[0].value);
 
-    const handleInputChange = (e) => {
-        setInputValue(e.target.value);
+    const handleInputChangeOne = (e) => {
+        setInputValueOne(e.target.value);
+    };
+    const handleInputChangeTwo = (e) => {
+        setInputValueTwo(e.target.value);
+    };
+    const handleInputChangeThree = (e) => {
+        setInputValueThree(e.target.value);
     };
 
-    const handleSelectChange = (e) => {
-        setSelectedOption(e.target.value);
+    const handleSelectChangeOne = (e) => {
+        setSelectedOptionOne(e.target.value);
+    };
+    const handleSelectChangeTwo = (e) => {
+        setSelectedOptionTwo(e.target.value);
+    };
+    const handleSelectChangeThree = (e) => {
+        setSelectedOptionThree(e.target.value);
     };
 
 
     return (
-        <div className="bg-gradient-low">
+        <div id='/' className="bg-gradient-low">
             {/* Navbar Section Start  */}
             <div className=' flex justify-between items-center h-20 max-w-full mx-auto lg:px-10 px-4 text-white '>
 
@@ -90,7 +106,9 @@ const Navbar = () => {
                                 key={item.id}
                                 className=' hover:text-[#15BFBD]  text-[14px] hover:font-bold cursor-pointer '
                             >
-                                {item.text}
+                                <Link to={item.url}>
+                                    {item.text}
+                                </Link>
                             </li>
                         ))}
                     </ul>
@@ -114,7 +132,9 @@ const Navbar = () => {
                             key={item.id}
                             className='p-2 border-b rounded-xl hover:text-[#15BFBD] duration-300 cursor-pointer hover:border-gray-600'
                         >
-                            {item.text}
+                            <Link to={item.url}>
+                                {item.text}
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -124,41 +144,41 @@ const Navbar = () => {
             {/* Banner Section Start  */}
             <div className="">
                 <div className=" w-full flex lg:flex-row flex-col-reverse items-center justify-center py-10 lg:px-10 px-5">
-                    <div className="lg:p-10 p-4 ">
-                        <div>
-                            <h2 className="text-4xl font-bold text-white ">Revolutionize Your Financial Future with Crypto Sphere</h2>
+                    <div className="lg:p-10 p-4 lg:w-1/2 flex flex-col lg:items-start items-center">
+                        <div className='flex flex-col lg:items-start items-center'>
+                            <h2 className="lg:text-4xl text-2xl font-bold text-white ">Revolutionize Your Financial Future with Crypto Sphere</h2>
                             <p className="text-white py-5 text-xl">Join Crypto Sphere and Experience Secure, User-Friendly, and Advanced Solutions for All Your Cryptocurrency Needs</p>
                         </div>
                         <div className="py-8 px-2 flex gap-4">
 
-                            <button className="text-[16px] font-bold bg-gradient-to-r from-[#2572DB] to-[#15BFBD] rounded-full px-4 py-2">
+                            <button className="text-[20px] font-bold bg-gradient-to-r from-[#2572DB] to-[#15BFBD] rounded-full px-4 py-2">
                                 Get Started
                             </button>
                         </div>
                     </div>
-                    <div className="relative flex justify-center items-center bg-gradient-stops">
-                        <div className="border-t-[2px] border-b-[1px] border-r-[3px] border-l-[1px] rounded-md border-blue-500 p-2  flex flex-col gap-3">
+                    <div className="relative flex justify-center items-center bg-gradient-stops lg:w-1/2 lg:mx-10">
+                        <div className="border-t-[2px] border-b-[1px] border-r-[3px] border-l-[1px] rounded-md border-blue-500 p-2 lg:px-6 flex flex-col gap-3 lg:w-full w-[350px] py-6">
                             <div className="flex justify-between px-6 ">
                                 <button className='text-[16px] font-bold bg-gradient-to-r from-[#2572DB] to-[#15BFBD] rounded-full px-10 py-2'>Buy</button>
                                 <button className='rounded-full px-10 py-2 text-[16px] font-bold'>Sell</button>
                             </div>
-                            <div className="">
+                            <div className="lg:w-full w-[320px]">
                                 <p className="">I want to spend</p>
                                 <div className="flex items-center">
                                     {/* Text Input */}
                                     <input
                                         type="text"
-                                        value={inputValue}
-                                        onChange={handleInputChange}
+                                        value={inputValueOne}
+                                        onChange={handleInputChangeOne}
                                         placeholder="Limit:10-10000"
-                                        className="px-4 py-2 border-2 border-blue-500 border-r-0 rounded-l-lg focus:outline-none text-black"
+                                        className="px-4 py-2 border-2 lg:w-full w-[220px] border-blue-500 border-r-0 rounded-l-lg focus:outline-none text-black"
                                     />
 
                                     {/* Custom Select Dropdown */}
                                     <div className="relative">
                                         <select
-                                            value={selectedOption}
-                                            onChange={handleSelectChange}
+                                            value={selectedOptionOne}
+                                            onChange={handleSelectChangeOne}
                                             className="px-4 py-2 border-blue-500 border-l-0 focus:outline-none border-2 text-gray-700 rounded-md rounded-l-none"
                                         >
                                             {options.map((option) => (
@@ -168,7 +188,7 @@ const Navbar = () => {
                                             ))}
                                         </select>
                                         <div className="absolute right-2 top-2 ">
-                                            {options.find(option => option.value === selectedOption)?.icon}
+                                            {options.find(option => option.value === selectedOptionOne)?.icon}
                                         </div>
                                     </div>
                                 </div>
@@ -179,17 +199,17 @@ const Navbar = () => {
                                     {/* Text Input */}
                                     <input
                                         type="text"
-                                        value={inputValue}
-                                        onChange={handleInputChange}
+                                        value={inputValueTwo}
+                                        onChange={handleInputChangeTwo}
                                         placeholder="Limit:5,76-5,899"
-                                        className="px-4 py-2 border-2 border-blue-500 border-r-0 rounded-l-lg focus:outline-none text-black"
+                                        className="px-4 py-2 lg:w-full w-[220px] border-2 border-blue-500 border-r-0 rounded-l-lg focus:outline-none text-black"
                                     />
 
                                     {/* Custom Select Dropdown */}
                                     <div className="relative">
                                         <select
-                                            value={selectedOption}
-                                            onChange={handleSelectChange}
+                                            value={selectedOptionTwo}
+                                            onChange={handleSelectChangeTwo}
                                             className="px-4 py-2 border-blue-500 border-l-0 focus:outline-none border-2 text-gray-700 rounded-md rounded-l-none"
                                         >
                                             {options.map((option) => (
@@ -199,7 +219,7 @@ const Navbar = () => {
                                             ))}
                                         </select>
                                         <div className="absolute right-2 top-2 ">
-                                            {options.find(option => option.value === selectedOption)?.icon}
+                                            {options.find(option => option.value === selectedOptionTwo)?.icon}
                                         </div>
                                     </div>
                                 </div>
@@ -210,17 +230,17 @@ const Navbar = () => {
                                     {/* Text Input */}
                                     <input
                                         type="text"
-                                        value={inputValue}
-                                        onChange={handleInputChange}
+                                        value={inputValueThree}
+                                        onChange={handleInputChangeThree}
                                         placeholder="Visa/MasterCard"
-                                        className="px-4 py-2 border-2 border-blue-500 border-r-0 rounded-l-lg focus:outline-none text-black w-full"
+                                        className="px-4 py-2 lg:w-full w-[260px]  border-2 border-blue-500 border-r-0 rounded-l-lg focus:outline-none text-black"
                                     />
 
                                     {/* Custom Select Dropdown */}
                                     <div className="relative">
                                         <select
-                                            value={selectedOption}
-                                            onChange={handleSelectChange}
+                                            value={selectedOptionThree}
+                                            onChange={handleSelectChangeThree}
                                             className="px-4 py-2 border-blue-500 border-l-0 focus:outline-none border-2 text-gray-700 rounded-md rounded-l-none"
                                         >
                                         </select>

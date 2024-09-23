@@ -45,7 +45,7 @@ const FreqAskQuestion = () => {
     };
 
     return (
-        <div className="mx-auto mt-10 lg:px-16 px-4 bg-gradient-stops">
+        <div id="faq" className="mx-auto mt-10 lg:px-16 px-4 bg-gradient-stops">
             <div className=" mx-auto mb-16 text-center">
                 <span className="text-4xl font-bold ">Frequently Asked Questions</span>
                 <h2 className=" ">Your Questions Answered</h2>

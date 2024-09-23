@@ -1,8 +1,9 @@
 import { AiFillCheckCircle } from "react-icons/ai";
 
 const Pricing = () => {
+
     return (
-        <section className="py-10 lg:px-10 px-4 dark:bg-gray-800 dark:text-gray-100 bg-gradient-low">
+        <section id="pricing" className="py-10 lg:px-10 px-4 dark:bg-gray-800 dark:text-gray-100 bg-gradient-low">
             <div className=" px-4 mx-auto">
                 <div className=" mx-auto mb-16 text-center">
                     <span className="text-4xl font-bold ">Pricing Plans</span>
@@ -32,7 +33,7 @@ const Pricing = () => {
                                     <span className="text-[14px]">Email Support</span>
                                 </li>
                             </ul>
-                            <div className="flex items-center justify-center text-center border-t-[2px] border-b-[1px] border-r-[3px] border-l-[1px] rounded-md border-blue-500 py-2 mx-auto w-4/5">
+                            <div className="flex items-center justify-center text-center border-t-[2px] border-b-[1px] border-r-[3px] border-l-[1px] rounded-md border-blue-500 py-2 mx-auto w-4/5 bg-gradient-to-r from-[#2572DB] to-[#15BFBD] bg-clip-text text-transparent">
                                 <h1 className="text-5xl font-extrabold">$19</h1>
                                 <h5 className="">/month</h5>
                             </div>
@@ -62,7 +63,7 @@ const Pricing = () => {
                                     <span className="text-[14px]">Priority Support</span>
                                 </li>
                             </ul>
-                            <div className="flex items-center justify-center text-center border-t-[2px] border-b-[1px] border-r-[3px] border-l-[1px] rounded-md border-blue-500 py-2 mx-auto w-4/5">
+                            <div className="flex items-center justify-center text-center border-t-[2px] border-b-[1px] border-r-[3px] border-l-[1px] rounded-md border-blue-500 py-2 mx-auto w-4/5 bg-gradient-to-r from-[#2572DB] to-[#15BFBD] bg-clip-text text-transparent">
                                 <h1 className="text-5xl font-extrabold">$49</h1>
                                 <h5 className="">/month</h5>
                             </div>
@@ -92,7 +93,7 @@ const Pricing = () => {
                                     <span className="text-[14px]">24/7 Dedicated Support</span>
                                 </li>
                             </ul>
-                            <div className="flex items-center justify-center text-center border-t-[2px] border-b-[1px] border-r-[3px] border-l-[1px] rounded-md border-blue-500 py-2 mx-auto w-4/5">
+                            <div className="flex items-center justify-center text-center border-t-[2px] border-b-[1px] border-r-[3px] border-l-[1px] rounded-md border-blue-500 py-2 mx-auto w-4/5 bg-gradient-to-r from-[#2572DB] to-[#15BFBD] bg-clip-text text-transparent">
                                 <h1 className="text-5xl font-extrabold">$99</h1>
                                 <h5 className="">/month</h5>
                             </div>
