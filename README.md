@@ -32,26 +32,26 @@ This website is built using the following technologies:
 ## Installation and Setup
 *Set up React router:
 
-npm create vite@latest name-of-your-project -- --template react
-npm install react-router-dom localforage match-sorter sort-by
-npm run dev
+#npm create vite@latest name-of-your-project -- --template react
+#npm install react-router-dom localforage match-sorter sort-by
+#npm run dev
 
-*Set up Tailwind css
+#Set up Tailwind css
 
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+#npm install -D tailwindcss postcss autoprefixer
+#npx tailwindcss init -p
 
 #tailwind.config.js:
-content: [
+#content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
 
 #index.css:
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+#@tailwind base;
+#@tailwind components;
+#@tailwind utilities;
 
 ### Prerequisites
 
@@ -65,4 +65,4 @@ Before you begin, ensure you have the following installed on your machine:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/rakibul4516/Crypto-Sphere
+   git clone https://github.com/rakibul4516/Crypto-Sphere.git
